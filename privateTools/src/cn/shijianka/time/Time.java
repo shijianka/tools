@@ -10,7 +10,7 @@ public class Time {
     /**
      * 声明枚举变量 毫秒 秒 分 时 天 月 年 世纪
      */
-    private enum time {
+    public enum time {
         ms,
         s,
         minute,
