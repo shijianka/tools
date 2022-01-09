@@ -51,7 +51,7 @@ public class Time {
         end = 0;
     }
 
-    public static long timeTest(time type) {
+    public static double timeTest(time type) {
         switch (type) {
             case ms:
                 return timeTest();
@@ -77,52 +77,52 @@ public class Time {
     /**
      * 将毫秒值的转换为秒值
      */
-    public static long switchSeconds(long ms) {
-        return ms / 1000;
+    public static double switchSeconds(long ms) {
+        return (double) ms / 1000;
     }
 
     /**
      * 将毫秒值的转换为分钟值
      */
-    public static long switchMinutes(long ms) {
-        return ms / 1000 / 60;
+    public static double switchMinutes(long ms) {
+        return (double) ms / 1000 / 60;
     }
 
 
     /**
      * 将毫秒值的转换为小时
      */
-    public static long switchHours(long ms) {
-        return ms / 1000 / 60 / 60;
+    public static double switchHours(long ms) {
+        return (double) ms / 1000 / 60 / 60;
     }
 
     /**
      * 将毫秒值的转换为日
      */
-    public static long switchDays(long ms) {
-        return ms / 1000 / 60 / 60 / 24;
+    public static double switchDays(long ms) {
+        return (double) ms / 1000 / 60 / 60 / 24;
     }
 
     /**
      * 将毫秒值的转换月
      */
-    public static long switchMonths(long ms) {
-        return ms / 1000 / 60 / 60 / 24 / 30;
+    public static double switchMonths(long ms) {
+        return (double) ms / 1000 / 60 / 60 / 24 / 30;
     }
 
 
     /**
      * 将毫秒值的转换年
      */
-    public static long switchYears(long ms) {
-        return ms / 1000 / 60 / 60 / 24 / 30 / 12;
+    public static double switchYears(long ms) {
+        return (double) ms / 1000 / 60 / 60 / 24 / 30 / 12;
     }
 
     /**
      * 将毫秒值转换为世纪
      */
-    public static long switchCentury(long ms) {
-        return ms / 1000 / 60 / 60 / 24 / 30 / 12 / 100;
+    public static double switchCentury(long ms) {
+        return (double) ms / 1000 / 60 / 60 / 24 / 30 / 12 / 100;
     }
 }
 
