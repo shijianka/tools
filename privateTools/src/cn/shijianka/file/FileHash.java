@@ -28,11 +28,8 @@ public class FileHash {
             case 2:
                 type = "SHA-1";
                 break;
-            case 3:
-                type = "SHA-256";
-                break;
             default:
-                type = "MD5";
+                type = "SHA-256";
         }
         return md5HashCode(fis, type);
     }
