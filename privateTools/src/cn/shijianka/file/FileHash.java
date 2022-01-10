@@ -6,11 +6,20 @@ import java.io.InputStream;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 
-public class fileHash {
-    private fileHash() {
+public class FileHash {
+    private FileHash() {
     }
-    public static String fileHashCode(String filePath, int hashType) throws FileNotFoundException {
-        FileInputStream fis = new FileInputStream(filePath);
+    public static String fileHashCode(String filePath)  {
+       return fileHashCode( filePath,1);
+
+    }
+    public static String fileHashCode(String filePath, int hashType)  {
+        FileInputStream fis = null;
+        try {
+            fis = new FileInputStream(filePath);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         String type;
         switch (hashType) {
             case 1:
